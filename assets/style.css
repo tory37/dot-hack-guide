@@ -200,7 +200,7 @@ section { padding: clamp(48px, 7vw, 88px) 0; }
 .seq li::before { content: counter(q); font: 600 0.8rem/1 var(--font-mono); color: var(--faint); }
 .seq .badge { justify-content: center; }
 .seq .t b { font: 600 1.05rem/1.25 var(--font-head); display: block; overflow-wrap: break-word; }
-.seq .t small { display: block; font: 400 0.8rem/1.4 var(--font-mono); color: var(--muted); margin-top: 2px; }
+.seq .t small { display: block; font: 400 0.8rem/1.4 var(--font-mono); color: var(--muted); margin-top: 7px; }
 .seq li.gen {
   counter-increment: none; display: block; background: none; border: 0; border-bottom: 1px dashed var(--line); border-radius: 0;
   padding: 18px 0 6px; font: 600 0.74rem/1 var(--font-mono); letter-spacing: 0.18em; color: var(--anime);

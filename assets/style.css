@@ -191,28 +191,6 @@ section { padding: clamp(48px, 7vw, 88px) 0; }
 .path .cost { margin-top: auto; padding-top: 14px; border-top: 1px dashed var(--line); font: 500 0.82rem/1.5 var(--font-mono); color: var(--muted); }
 @media (max-width: 960px) { .paths { grid-template-columns: 1fr; } }
 
-/* ── Sequence: Path A, one item per line ─────────────────── */
-.seq { list-style: none; margin: 0; padding: 0; counter-reset: q; max-width: 46rem; display: grid; gap: 8px; }
-.seq li {
-  counter-increment: q; display: grid; grid-template-columns: 2.2rem 4.6rem minmax(0, 1fr); align-items: center; gap: 10px;
-  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 11px 14px;
-}
-.seq li::before { content: counter(q); font: 600 0.8rem/1 var(--font-mono); color: var(--faint); }
-.seq .badge { justify-content: center; }
-.seq .t b { font: 600 1.05rem/1.25 var(--font-head); display: block; overflow-wrap: break-word; }
-.seq .t small { display: block; font: 400 0.8rem/1.4 var(--font-mono); color: var(--muted); margin-top: 7px; }
-.seq li.gen {
-  counter-increment: none; display: block; background: none; border: 0; border-bottom: 1px dashed var(--line); border-radius: 0;
-  padding: 18px 0 6px; font: 600 0.74rem/1 var(--font-mono); letter-spacing: 0.18em; color: var(--anime);
-}
-.seq li.gen::before { content: none; }
-.seq-note { color: var(--muted); font-size: 0.92rem; max-width: 46rem; margin-top: 1.4rem; }
-@media (max-width: 520px) {
-  .seq li { grid-template-columns: 1.5rem 3.9rem minmax(0, 1fr); gap: 8px; padding: 10px 10px; }
-  .seq .t b { font-size: 0.98rem; }
-  .seq .badge { padding: 5px 4px; letter-spacing: 0.06em; }
-}
-
 /* ── Badges ──────────────────────────────────────────────── */
 .badge {
   display: inline-flex; align-items: center; gap: 6px; font: 600 0.68rem/1 var(--font-mono);
